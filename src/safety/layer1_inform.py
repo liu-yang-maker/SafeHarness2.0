@@ -162,4 +162,4 @@ class AdversarialContextFilter:
             f"Text to filter:\n{text[:2000]}"
         )
         messages = [{"role": "user", "content": prompt}]
-        return call_model(self.judge_model or "doubao_seed2", messages)
+        return call_model(self.judge_model or "deepseek_chat", messages)

@@ -11,8 +11,8 @@ data:
 
 models:
   agent_models:
-    - "doubao_seed2"
-  judge_model: "doubao_seed2"
+    - "deepseek_chat"
+  judge_model: "deepseek_chat"
 
 harness:
   types:

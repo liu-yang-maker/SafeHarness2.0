@@ -52,7 +52,7 @@ Multi-agent: CDR (Cascade Detection Rate), IASS (Inter-Agent Safety Score), CS (
 
 ```
 SafeHarness2.0/
-├── llm_api_openai.py              # LLM API access (pre-configured)
+├── llm_api.py                     # LLM API access (DeepSeek via OpenAI SDK)
 ├── config/experiment.yaml         # Experiment configuration
 ├── src/
 │   ├── llm_client.py              # Unified LLM call wrapper
@@ -120,7 +120,7 @@ Task (Agent-SafetyBench)
 
 Edit `config/experiment.yaml` to customize:
 
-- **models**: Which LLM to use (default: `doubao_seed2`)
+- **models**: Which LLM to use (default: `deepseek_chat`)
 - **harness.types**: Which MaS architectures to test
 - **security_modes**: Which defense baselines to compare
 - **attacks.types**: Which attacks to inject

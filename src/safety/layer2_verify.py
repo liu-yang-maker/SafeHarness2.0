@@ -167,7 +167,7 @@ class CausalSafetyVerifier:
         )
 
         messages = [{"role": "user", "content": prompt}]
-        response = call_model(self.judge_model or "doubao_seed2", messages)
+        response = call_model(self.judge_model or "deepseek_chat", messages)
 
         if response is None:
             return VerificationDecision(
@@ -219,7 +219,7 @@ class CausalSafetyVerifier:
         )
 
         messages = [{"role": "user", "content": prompt}]
-        response = call_model(self.judge_model or "doubao_seed2", messages)
+        response = call_model(self.judge_model or "deepseek_chat", messages)
 
         if response is None:
             return VerificationDecision(
